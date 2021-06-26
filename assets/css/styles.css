@@ -1,0 +1,68 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root{
+  --header-height: 3rem;
+  --nav-width: 68px;
+
+  /*===== Colors =====*/
+  --first-color: #00203f;
+  --first-color-light: #AFA5D9;
+  --white-color: #f8f8ff;
+  
+  /*===== Font and typography =====*/
+  --body-font: 'Open Sans', sans-serif;
+  --normal-font-size: 1rem;
+  
+  /*===== z index =====*/
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 0 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+  background: var(--white-color);
+}
+
+.form-group{
+  margin-bottom: 1rem;
+}
+
+
+.form-control{
+  border: 1px solid #d5dae2;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.col-5 label{
+  font-size: 15px;
+  font-weight: 600; 
+}
+
+.col-5 label::after {
+  content:" *";
+  color: red;
+}
+
+.ROI_div_current{
+  display: none;
+}
+
+.ROI_div_previous{
+  display: none;
+}
+.user_pan_upload_div{
+  display: none;
+}
